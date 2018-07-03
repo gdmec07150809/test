@@ -1,0 +1,109 @@
+.dad{
+	height: 1rem;
+	color: hotpink;
+}
+.box_bottom {
+		width: 100%;
+		height: 1.4rem;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 9992;
+		background: white;
+		border-top: 0.01rem solid #CACACA;
+	}
+	
+	.btns {
+		border: none;
+		border-radius: 0.1rem;
+		position: absolute;
+		top: 0.25rem;
+		left: 8%;
+		color: white;
+		font-size: 0.3rem;
+	}
+	
+	.btnso {
+		padding: 0 0.2rem;
+		font-size: 0.3rem;
+		border-radius: 0.15rem;
+		/*border: 0.02rem solid #D2D2D2;*/
+		float: left;
+		margin-right: 0.3rem;
+		position: relative;
+		background-color: #F5F4F7;
+		text-align: center;
+		line-height: 0.6rem;
+	}
+	
+	.btnsos {
+		padding: 0 0.2rem;
+		font-size: 0.3rem;
+		border-radius: 0.15rem;
+		/*border: 0.02rem solid black;*/
+		float: left;
+		background-color: #FF9A2B;
+		color: #FFFFFF;
+		margin-right: 0.3rem;
+		text-align: center;
+		line-height: 0.6rem;
+		position: relative;
+	}
+	
+	.imgs {
+		display: none;
+	}
+	
+	.imgsto {
+		display: block;
+		width: 0.31rem;
+		height: 0.31rem;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	
+	.block{
+		font-size: 0.3rem;
+		width: 75%;
+		margin-left: 0.3rem;
+		margin-top: 0.3rem;
+		/*float: left;*/
+		height: 1rem;
+	}
+	.boxs{
+		width: 100%;
+		height: 1.8rem;
+		/*background: lightcyan;*/
+		position: relative;
+		margin-top: 0.3rem;
+		border-bottom: 0.005rem solid rgb(241, 241, 241);
+		
+	}
+   .fa{
+   	    font-size: 0.5rem;
+   	    float: left;
+   	    color: #CACACA;
+   }
+   .biao{
+   	width: 0.34rem;
+   	height: 0.34rem;
+   	float: left;
+   	 margin-top: 0.2rem;
+   	 margin-left: 0.2rem;
+   }
+.biaos{
+   	width: 0.34rem;
+   	height: 0.34rem;
+   	
+   }
+.el-slider__bar{
+	height: 6px;
+	background-color: #ff9d00;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	position: absolute
+}
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html>
+
+	<head>
+
+		<!--<meta charset="utf-8">-->
+		<!--允许全屏-->
+		<!--<meta c name="apple-mobile-web-app-capable" />-->
+		<!--<meta c name="apple-touch-fullscreen" />-->
+		<!--<meta name="data-spm" c />-->
+		<!--<meta c name="format-detection" />-->
+		<!--<meta c name="ML-Config" />-->
+		<!--<meta name="viewport" c/>-->
+		<!--<title>test</title>-->
+
+		<meta name="viewport" content="width=device-width" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>demo001</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "Helvetica Neue", 'Helvetica', "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+			}
+			/*<link rel="stylesheet" href="static/css/font-awesome.css" />*/
+		</style>
+		<!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>  -->
+		<script src="http://api.map.baidu.com/api?ak=vkINzT3ivjxx1SoIQG88u4YqCl4ROVuH&v=2.0&services=false"></script>
+		<!--<script type='text/javascript' src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>-->
+		<script type='text/javascript' src='static/js/mui.min.js'></script>
+		<script type='text/javascript' src='http://www.meetartapp.com/if/ifshow.js'></script>
+		<script src="static/js/adaption.js"></script>
+		<script src="static/js/swiper.js"></script>
+		<link href="src/assets/css/swiper.css" />
+		<script src="" type="text/javascript"></script>
+
+		<link rel="stylesheet" href="static/css/font-awesome-4.7.0/css/font-awesome.css" />
+
+		<!-- 引入样式 -->
+		<!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+		<!-- 引入组件库 -->
+		<!--<script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+
+		<!--<script type="text/javascript" src="iview.min.js"></script>-->
+
+	</head>
+
+	<body style="">
+		<div id="app">
+
+			<router-view></router-view>
+
+		</div>
+	</body>
+	<script>
+		! function(e) {
+			function t(a) {
+				if(i[a]) return i[a].exports;
+				var n = i[a] = {
+					exports: {},
+					id: a,
+					loaded: !1
+				};
+				return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports
+			}
+			var i = {};
+			return t.m = e, t.c = i, t.p = "", t(0)
+		}([function(e, t) {
+			"use strict";
+			Object.defineProperty(t, "__esModule", {
+				value: !0
+			});
+			var i = window;
+			t["default"] = i.flex = function(normal, e, t) {
+				var a = e || 100,
+					n = t || 1,
+					r = i.document,
+					o = navigator.userAgent,
+					d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),
+					l = o.match(/U3\/((\d+|\.){5,})/i),
+					c = l && parseInt(l[1].split(".").join(""), 10) >= 80,
+					p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi),
+					s = i.devicePixelRatio || 1;
+				p || d && d[1] > 534 || c || (s = 1);
+				var u = normal ? 1 : 1 / s,
+					m = r.querySelector('meta[name="viewport"]');
+				m || (m = r.createElement("meta"), m.setAttribute("name", "viewport"), r.head.appendChild(m)), m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u), r.documentElement.style.fontSize = normal ? "50px" : a / 2 * s * n + "px"
+			}, e.exports = t["default"]
+		}]);
+		flex(false, 100, 1);
+	</script>
+
+</html>
